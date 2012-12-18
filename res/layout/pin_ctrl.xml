@@ -1,0 +1,313 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPIO引脚:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:text="GPJ2" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="1"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:text="值"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioValue0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="0" />
+
+            <RadioButton
+                android:id="@+id/radioValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read" />
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write" />
+
+        <Button
+            android:id="@+id/btnPinBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能" />
+
+        <RadioButton
+            android:id="@+id/radiocfg0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="0|Input" />
+
+        <RadioButton
+            android:id="@+id/radiocfg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1|Output" />
+
+        <RadioButton
+            android:id="@+id/radiocfg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/radiocfg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/radiocfg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/radiocfg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/radiocfg6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/radiocfg7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radiocfg8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/radiocfg9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <RadioButton
+            android:id="@+id/radiocfg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/radiocfg11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11" />
+
+        <RadioButton
+            android:id="@+id/radiocfg12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+        <RadioButton
+            android:id="@+id/radiocfg13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13" />
+
+        <RadioButton
+            android:id="@+id/radiocfg14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14" />
+
+        <RadioButton
+            android:id="@+id/radiocfg15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupcfg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGetcfgpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get_cfgpin" />
+
+        <Button
+            android:id="@+id/btnSetcfgpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set_cfgpin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上拉" />
+
+            <RadioButton
+                android:id="@+id/radiopull0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="PULL_NONE" />
+
+            <RadioButton
+                android:id="@+id/radiopull1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PULL_DOWN" />
+
+            <RadioButton
+                android:id="@+id/radiopull2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PULL_UP" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGetPull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get_Pull" />
+
+        <Button
+            android:id="@+id/btnSetPull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set_Pull" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="串口调试信息控制" />
+
+        <CheckBox
+            android:id="@+id/checkBox_dbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="dgb状态" />
+
+        <Button
+            android:id="@+id/btnGetdbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getdbg" />
+
+        <Button
+            android:id="@+id/btnEnabledbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable_dbg" />
+
+        <Button
+            android:id="@+id/btnDisabledbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disable_dbg" />
+
+    </LinearLayout>
+
+</LinearLayout>

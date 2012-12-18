@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioBoard6410"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tiny/Mini6410" />
+
+            <RadioButton
+                android:id="@+id/radioBoard210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiny/Mini210" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/btnTestBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTestInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:editable="false"
+        android:gravity="top|left"
+        android:longClickable="false"
+        android:scrollbars="vertical" >
+
+    </EditText>
+
+</LinearLayout>

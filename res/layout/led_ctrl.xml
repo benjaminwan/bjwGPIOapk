@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioBoard6410"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tiny/Mini6410" />
+
+            <RadioButton
+                android:id="@+id/radioBoard210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiny/Mini210" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnReadLeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read LEDs" />
+
+        <Button
+            android:id="@+id/btnLedBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED1" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <EditText
+                android:id="@+id/editLedGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:text="GPK" />
+
+            <EditText
+                android:id="@+id/editLedNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED2" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <EditText
+                android:id="@+id/editLedGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:text="GPK" />
+
+            <EditText
+                android:id="@+id/editLedNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED3" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <EditText
+                android:id="@+id/editLedGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:text="GPK" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editLedNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED4" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLed4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <EditText
+                android:id="@+id/editLedGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:text="GPK" />
+
+            <EditText
+                android:id="@+id/editLedNum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioLEDNONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="NONE" />
+
+            <RadioButton
+                android:id="@+id/radioLEDALL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1>2>3>4" />
+
+            <RadioButton
+                android:id="@+id/radioLED1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED1" />
+
+            <RadioButton
+                android:id="@+id/radioLED2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED2" />
+
+            <RadioButton
+                android:id="@+id/radioLED3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED3" />
+
+            <RadioButton
+                android:id="@+id/radioLED4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LED4" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

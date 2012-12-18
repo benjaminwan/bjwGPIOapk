@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioS3C6410"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="S3C6410" />
+
+            <RadioButton
+                android:id="@+id/radioS5PV210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S5PV210" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGetList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GetList" />
+
+        <Button
+            android:id="@+id/btnExportSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExportSD" />
+
+        <CheckBox
+            android:id="@+id/cBoxAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto" />
+
+        <Button
+            android:id="@+id/btnListBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="GPIO"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Value"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="cfgpin"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pull"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridViewGPIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="1" >
+    </GridView>
+
+</LinearLayout>
